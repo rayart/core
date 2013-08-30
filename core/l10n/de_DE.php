@@ -1,6 +1,12 @@
 <?php
 $TRANSLATIONS = array(
 "%s shared »%s« with you" => "%s geteilt »%s« mit Ihnen",
+"Turned on maintenance mode" => "Wartungsmodus eingeschaltet ",
+"Turned off maintenance mode" => "Wartungsmodus ausgeschaltet",
+"Updated database" => "Datenbank aktualisiert",
+"Updating filecache, this may take really long..." => "Aktualisiere Dateicache, dies könnte eine Weile dauern...",
+"Updated filecache" => "Dateicache aktualisiert",
+"... %d%% done ..." => "... %d%% erledigt ...",
 "Category type not provided." => "Kategorie nicht angegeben.",
 "No category to add?" => "Keine Kategorie hinzuzufügen?",
 "This category already exists: %s" => "Die nachfolgende Kategorie existiert bereits: %s",
@@ -41,7 +47,6 @@ $TRANSLATIONS = array(
 "last year" => "Letztes Jahr",
 "years ago" => "Vor Jahren",
 "Choose" => "Auswählen",
-"Cancel" => "Abbrechen",
 "Error loading file picker template" => "Es ist ein Fehler in der Vorlage des Datei-Auswählers aufgetreten.",
 "Yes" => "Ja",
 "No" => "Nein",
@@ -136,8 +141,6 @@ $TRANSLATIONS = array(
 "Log in" => "Einloggen",
 "Alternative Logins" => "Alternative Logins",
 "Hey there,<br><br>just letting you know that %s shared »%s« with you.<br><a href=\"%s\">View it!</a><br><br>Cheers!" => "Hallo,<br><br>ich wollte Sie nur wissen lassen, dass %s %s mit Ihnen teilt.<br><a href=\"%s\">Schauen Sie es sich an!</a><br><br>Viele Grüße!",
-"prev" => "Zurück",
-"next" => "Weiter",
 "Updating ownCloud to version %s, this may take a while." => "Aktualisiere ownCloud auf Version %s. Dies könnte eine Weile dauern."
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

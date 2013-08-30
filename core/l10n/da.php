@@ -1,6 +1,12 @@
 <?php
 $TRANSLATIONS = array(
 "%s shared »%s« with you" => "%s delte »%s« med sig",
+"Turned on maintenance mode" => "Startede vedligeholdelsestilstand",
+"Turned off maintenance mode" => "standsede vedligeholdelsestilstand",
+"Updated database" => "Opdaterede database",
+"Updating filecache, this may take really long..." => "Opdatere filcache, dette kan tage rigtigt lang tid...",
+"Updated filecache" => "Opdaterede filcache",
+"... %d%% done ..." => "... %d%% færdig ...",
 "Category type not provided." => "Kategori typen ikke er fastsat.",
 "No category to add?" => "Ingen kategori at tilføje?",
 "This category already exists: %s" => "Kategorien eksisterer allerede: %s",
@@ -41,7 +47,6 @@ $TRANSLATIONS = array(
 "last year" => "sidste år",
 "years ago" => "år siden",
 "Choose" => "Vælg",
-"Cancel" => "Annuller",
 "Error loading file picker template" => "Fejl ved indlæsning af filvælger skabelon",
 "Yes" => "Ja",
 "No" => "Nej",
@@ -136,8 +141,6 @@ $TRANSLATIONS = array(
 "Log in" => "Log ind",
 "Alternative Logins" => "Alternative logins",
 "Hey there,<br><br>just letting you know that %s shared »%s« with you.<br><a href=\"%s\">View it!</a><br><br>Cheers!" => "Hallo,<br><br>dette blot for at lade dig vide, at %s har delt \"%s\" med dig.<br><a href=\"%s\">Se det!</a><br><br>Hej",
-"prev" => "forrige",
-"next" => "næste",
 "Updating ownCloud to version %s, this may take a while." => "Opdatere Owncloud til version %s, dette kan tage et stykke tid."
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

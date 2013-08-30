@@ -69,7 +69,7 @@ function initL10N(app) {
 			var code = 'var plural; var nplurals; '+pf+' return { "nplural" : nplurals, "plural" : (plural === true ? 1 : plural ? plural : 0) };';
 			t.plural_function = new Function("n", code);
 		} else {
-			console.log("Syntax error in language file. Plural-Forms header is invalid ["+plural_forms+"]");
+			console.log("Syntax error in language file. Plural-Forms header is invalid ["+t.plural_forms+"]");
 		}
 	}
 }
@@ -709,7 +709,6 @@ $(document).ready(function(){
 		});
 		label.hide();
 	};
-	setShowPassword($('#password'), $('label[for=show]'));
 	setShowPassword($('#adminpass'), $('label[for=show]'));
 	setShowPassword($('#pass2'), $('label[for=personal-show]'));
 	setShowPassword($('#dbpass'), $('label[for=dbpassword]'));
@@ -762,6 +761,7 @@ $(document).ready(function(){
 	$('.password .action').tipsy({gravity:'se', fade:true, live:true});
 	$('#upload').tipsy({gravity:'w', fade:true});
 	$('.selectedActions a').tipsy({gravity:'s', fade:true, live:true});
+	$('a.action.delete').tipsy({gravity:'e', fade:true, live:true});
 	$('a.action').tipsy({gravity:'s', fade:true, live:true});
 	$('td .modified').tipsy({gravity:'s', fade:true, live:true});
 

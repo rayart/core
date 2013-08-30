@@ -689,7 +689,7 @@ class Trashbin {
 			}
 		}
 	}
-	
+
 	/**
 	 * clean up the trash bin
 	 * @param current size of the trash bin
@@ -717,7 +717,7 @@ class Trashbin {
 				\OC_Log::write('files_trashbin', 'remove "' . $filename . '" fom trash bin because it is older than ' . $retention_obligation, \OC_log::INFO);
 			}
 		}
-		$availableSpace = $availableSpace + $size;
+		$availableSpace += $size;
 		// if size limit for trash bin reached, delete oldest files in trash bin
 		if ($availableSpace < 0) {
 			$query = \OC_DB::prepare('SELECT `location`,`type`,`id`,`timestamp` FROM `*PREFIX*files_trash`'
@@ -892,16 +892,17 @@ class Trashbin {
 		//Listen to post write hook
 		\OCP\Util::connectHook('OC_Filesystem', 'post_write', "OCA\Files_Trashbin\Hooks", "post_write_hook");
 	}
-	
+
 	/**
 	 * @brief check if trash bin is empty for a given user
 	 * @param string $user
 	 */
 	public static function isEmpty($user) {
 
-		$trashSize = self::getTrashbinSize($user);
+		$view = new \OC\Files\View('/' . $user . '/files_trashbin');
+		$content = $view->getDirectoryContent('/files');
 
-		if ($trashSize !== false && $trashSize > 0) {
+		if ($content) {
 			return false;
 		}
 
