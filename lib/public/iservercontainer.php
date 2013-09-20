@@ -76,4 +76,10 @@ interface IServerContainer {
 	 */
 	function getSession();
 
+	/**
+	 * @brief Returns an avatar manager, used for avatar functionality
+	 * @return \OCP\IAvatar
+	 */
+	function getAvatar();
+
 }
